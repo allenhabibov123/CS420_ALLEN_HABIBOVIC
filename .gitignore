@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/OOP Review/Inheritance/build/
+/OOP Review/Polymorphism/build/

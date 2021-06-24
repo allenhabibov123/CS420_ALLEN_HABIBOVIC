@@ -107,7 +107,7 @@ files:
       offset: 593
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |2-
 
               // From now on is like reading from the keyboard...
@@ -119,17 +119,17 @@ files:
 
               }
               scan.close();
-  - offset: 1280
-    length: 52
+  - offset: 2334
+    length: 46
     placeholder_text: "/* TODO \nRemember to return a JSON object.*/"
     initial_state:
       length: 44
       offset: 729
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject())
-  - offset: 1480
+  - offset: 2528
     length: 43
     placeholder_text: "/* TODO \nFill in this data type (Object) */"
     initial_state:
@@ -137,9 +137,9 @@ files:
       offset: 922
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: URL
-  - offset: 1538
+  - offset: 2586
     length: 64
     placeholder_text: |-
       /* TODO
@@ -149,10 +149,10 @@ files:
       offset: 976
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: URL
-  - offset: 1611
-    length: 512
+  - offset: 2659
+    length: 529
     placeholder_text: |-
       /* TODO
       Read the information coming from the web
@@ -162,7 +162,7 @@ files:
       offset: 1046
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |2-
        // From now on is like reading from the keyboard...
               Scanner scan = new Scanner(url.openStream());
@@ -173,17 +173,17 @@ files:
 
               }
               scan.close();
-  - offset: 2139
-    length: 9
+  - offset: 3189
+    length: 873
     placeholder_text: "/* TODO \nreturn the appropriate result.\n*/"
     initial_state:
       length: 42
       offset: 1114
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject());
-  - offset: 2250
+  - offset: 4164
     length: 687
     placeholder_text: "/* TODO \nThis should return a String with each recipe in three\
       \ lines:\nTitle:the title of the recipe\nLink:the link to the recipe\nIngredients:The\
@@ -193,7 +193,7 @@ files:
       offset: 1258
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       JsonArray recipes = (JsonArray) doc.get("results");
               for(Object r : recipes){
@@ -202,8 +202,8 @@ files:
                   results += "link:"+(String)obj.get("href")+"\n";
                   results += "ingredients:"+(String)obj.get("ingredients")+"\n";
               }
-  - offset: 3035
-    length: 302
+  - offset: 4949
+    length: 398
     placeholder_text: "/* TODO\nGiven a String with some text in it, write that text\
       \ to a file. \nThe name of the file is given in outfile */"
     initial_state:
@@ -211,7 +211,7 @@ files:
       offset: 1528
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       try(DataOutputStream out = new DataOutputStream(new FileOutputStream(outfile))){
                   out.writeBytes(text);
@@ -240,5 +240,10 @@ files:
     \        /* TODO\nGiven a String with some text in it, write that text to a file.\
     \ \nThe name of the file is given in outfile */\n    }\n\n}\n"
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Your Methods for getRecipesBy... are throwing an exception when they shouldn&#39;t:
+    null
+  time: Thu, 24 Jun 2021 23:10:26 UTC
 record: -1

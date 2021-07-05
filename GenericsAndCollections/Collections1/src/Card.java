@@ -22,6 +22,7 @@ public class Card <V,S>{
         this.suit = suit;
     }
 
+    @Override
     public String toString(){
         return value+" of "+suit;
     }

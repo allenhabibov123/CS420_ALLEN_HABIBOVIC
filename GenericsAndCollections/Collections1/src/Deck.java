@@ -9,21 +9,42 @@ public class Deck implements Iterable<Card>{
 /* TODO 
 This constructor initializes the deck variable with
 all the cards of a deck, except a joker.
-The suits array may help you.*/        }
+The suits array may help you.*/
+            this.deck = new LinkedList<Card>();
+            Integer[] number_values = {2, 3, 4, 5, 6, 7, 8, 9, 10};
+            String[] face_values = {"Ace", "Jack", "Queen", "King"};
+
+            int k = 0;
+
+            //Add number value cards Card<Integer, String> to list object deck
+
+            for(int i = 0; i < number_values.length; i++) {
+                for(int j = 0; j < this.suits.length; j++) {
+                    this.deck.add(k++, new Card<Integer, String>(number_values[i], this.suits[j]));
+                }
+            }
+
+            //Add face value cards Card<String, String> to list object deck
+
+            for(int i = 0; i < face_values.length; i++) {
+                for(int j = 0; j < this.suits.length; j++) {
+                    this.deck.add(k++, new Card<String, String>(face_values[i], this.suits[j]));
+                }
+            }
     }
 
     public Card dealCard(){
-/* TODO
-Code this. It is almost EXACTLY as the  method to draw one object
-from the bag in the previous task. The difference is that this method
-REMOVES the card from the deck */
+        int index = (int) (Math.random() * this.deck.size());
+        return this.deck.remove(index);
     }
 
     public int size(){/* TODO: Return the size of the deck (number of cards left in it)*/
+        return this.deck.size();
     }
     @Override
     public Iterator<Card> iterator() {
        /* TODO 
 Return a new DeckIterator with this instance in the constructor.*/
+        return (Iterator<Card>) new DeckIterator<Card>(this);
     }
 }

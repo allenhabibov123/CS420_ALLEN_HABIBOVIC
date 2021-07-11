@@ -3,28 +3,28 @@ files:
 - name: src/Task.java
   visible: true
   placeholders:
-  - offset: 160
-    length: 34
+  - offset: 163
+    length: 22
     placeholder_text: "/* TODO \nCreate a racer with c1 */"
     initial_state:
       length: 34
       offset: 160
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: acer1 = new Ra
-  - offset: 216
-    length: 33
+  - offset: 194
+    length: 4
     placeholder_text: "/* TODO \nCreate a Racer with c2*/"
     initial_state:
       length: 33
       offset: 216
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: ' racer2 = new '
-  - offset: 256
-    length: 143
+  - offset: 456
+    length: 0
     placeholder_text: "/* TODO:\nCreate two threads using \"new Thread\" and pass\
       \  one Runnable \nto each thread.  It is your job to figure out which are the\
       \ Runnables.*/"
@@ -32,8 +32,8 @@ files:
       length: 143
       offset: 256
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       2);
               new Thread(racer1).start();
@@ -87,8 +87,8 @@ files:
       length: 150
       offset: 460
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       this.miles = this.miles>0?this.miles - miles:0;
               this.odometer+=miles;
@@ -108,31 +108,31 @@ files:
   visible: true
   placeholders:
   - offset: 19
-    length: 90
+    length: 108
     placeholder_text: "/* TODO \nAdd something here so that you can pass this Racer\
       \ to the constructor of Thread*/"
     initial_state:
       length: 90
       offset: 19
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: implements Runnable
-  - offset: 204
-    length: 76
+  - offset: 222
+    length: 129
     placeholder_text: "/* TODO \nCreate a constructor that receives a Car objec and\
       \ initializes c.*/"
     initial_state:
       length: 76
       offset: 204
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       public Racer(Car c){
               this.c=c;
           }
-  - offset: 299
+  - offset: 809
     length: 151
     placeholder_text: "/* TODO \nOverride one method.  This is the task the thread\
       \ will perform... You have to determine which method this is.\nCheck the method\
@@ -142,7 +142,7 @@ files:
       offset: 299
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       public void run() {
               while (c.odometer<distance)
@@ -167,5 +167,8 @@ files:
     \ You have to determine which method this is.\nCheck the method description. */\n\
     }\n"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 11 Jul 2021 20:34:27 UTC
 record: -1

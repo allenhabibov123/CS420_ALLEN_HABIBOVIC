@@ -3,8 +3,8 @@ files:
 - name: src/Task.java
   visible: true
   placeholders:
-  - offset: 64
-    length: 87
+  - offset: 1
+    length: 89
     placeholder_text: |-
       /* TODO */
       This code is exactly the same as in Task 3 and should yield the same output.
@@ -13,7 +13,7 @@ files:
       offset: 64
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
               Person p = new Person("Kim Possible","2000-01-01");
               p.setPosition("Associate", 34000);
@@ -102,7 +102,7 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 50
+    length: 2313
     placeholder_text: |-
       /* TODO */
       Copy the Person class from Task 3 here.
@@ -110,8 +110,8 @@ files:
       length: 50
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |
       import java.time.LocalDate;
       import java.time.Period;
@@ -168,8 +168,8 @@ files:
 - name: src/Resume.java
   visible: true
   placeholders:
-  - offset: 106
-    length: 68
+  - offset: 1
+    length: 70
     placeholder_text: |-
       /* TODO */
       Same two inner classes and member variables as in task 3.
@@ -177,8 +177,8 @@ files:
       length: 68
       offset: 106
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |2-
           public class Education{
               String school;
@@ -211,8 +211,8 @@ files:
           private Person p;
           private List<Education> ed;
           private PriorityQueue<Experience> ex;
-  - offset: 204
-    length: 74
+  - offset: 71
+    length: 77
     placeholder_text: |-
       /* TODO */
       Same initialization of Person and the List of Education objects
@@ -220,13 +220,13 @@ files:
       length: 74
       offset: 204
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |2-
               this.p = p;
               ed = new ArrayList<>();
-  - offset: 280
-    length: 97
+  - offset: 150
+    length: 99
     placeholder_text: |-
       /* TODO */
       Initialize the priority queue in one line, without importing the Comparator interface.
@@ -234,11 +234,11 @@ files:
       length: 97
       offset: 280
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '       ex = new PriorityQueue<>((e1,e2)->e2.fromYear-e1.fromYear);'
-  - offset: 384
-    length: 133
+  - offset: 249
+    length: 136
     placeholder_text: |-
       /* TODO */
       The getter for experience and the methods to add education and experience objects stay the same, as well as the toString()
@@ -247,7 +247,7 @@ files:
       offset: 384
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
           public PriorityQueue getExperience(){return ex;}
 
@@ -290,5 +290,8 @@ files:
 
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 27 Jul 2021 03:03:42 UTC
 record: -1

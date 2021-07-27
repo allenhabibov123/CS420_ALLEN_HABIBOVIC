@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 72
-    length: 145
+    length: 147
     placeholder_text: |-
       /* TODO */
       Create a public static inner class called Triplet with generics for a first, second and third element. All variables should be publec.
@@ -12,8 +12,8 @@ files:
       length: 145
       offset: 72
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |2-
           public static class Triplet<T,U,V>{
               public T t;
@@ -25,8 +25,8 @@ files:
                   this.v = v;
               }
           }
-  - offset: 491
-    length: 102
+  - offset: 728
+    length: 241
     placeholder_text: |-
       /* TODO */
       Add the code to add a multiplication of 4.5 x 5.4, a division by zero, and divide 56.0/28.0
@@ -34,14 +34,14 @@ files:
       length: 102
       offset: 491
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |2-
               t.add(new Triplet<>(12.4,0.0,"/"));
               t.add(new Triplet<>(56.0,28.0,"/"));
               t.add(new Triplet<>(4.5,5.4,"*"));
-  - offset: 613
-    length: 143
+  - offset: 1009
+    length: 194
     placeholder_text: |-
       /* TODO */
       Utilizing a lambda expression, use the calculator to compute the operation specified in each Triplet with the corresponding numbers.
@@ -49,8 +49,8 @@ files:
       length: 143
       offset: 613
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: x->result+="\n"+c.compute(x.t,x.u,x.v)
   text: |-
     import java.util.ArrayList;
@@ -130,7 +130,7 @@ files:
   visible: true
   placeholders:
   - offset: 46
-    length: 94
+    length: 136
     placeholder_text: |-
       /* TODO */
       Specify a compute method that takes two Double objects and returns a Double object.
@@ -138,8 +138,8 @@ files:
       length: 94
       offset: 46
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: '    Double compute(Double d1, Double d2);'
   text: |
     @FunctionalInterface
@@ -151,8 +151,8 @@ files:
 - name: src/Calculator.java
   visible: true
   placeholders:
-  - offset: 137
-    length: 72
+  - offset: 138
+    length: 90
     placeholder_text: |-
       /* TODO */
       Use a lambda expression to set "res" to the correct function.
@@ -160,11 +160,11 @@ files:
       length: 72
       offset: 137
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: (x1,x2)-> x1+x2;
-  - offset: 256
-    length: 72
+  - offset: 274
+    length: 96
     placeholder_text: |-
       /* TODO */
       Use a lambda expression to set "res" to the correct function.
@@ -172,11 +172,11 @@ files:
       length: 72
       offset: 256
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: es= (x1,x2)->x1
-  - offset: 375
-    length: 72
+  - offset: 417
+    length: 99
     placeholder_text: |-
       /* TODO */
       Use a lambda expression to set "res" to the correct function.
@@ -184,11 +184,11 @@ files:
       length: 72
       offset: 375
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: '": res= (x1,x2)'
-  - offset: 494
-    length: 145
+  - offset: 563
+    length: 193
     placeholder_text: |-
       /* TODO */
       Use a lambda expression to set "res" to the correct function. You must account for divisions by zero as specified in the instructions.
@@ -196,11 +196,11 @@ files:
       length: 145
       offset: 494
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: 'e "/": res= (x1,x2)->x2==0?Double.POSITIVE_INF'
-  - offset: 685
-    length: 91
+  - offset: 873
+    length: 93
     placeholder_text: |-
       /* TODO */
       In the default value, the res function should return the minimun possible value.
@@ -208,11 +208,11 @@ files:
       length: 91
       offset: 685
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: '  default: res= (x1,x2)->D'
-  - offset: 896
-    length: 69
+  - offset: 1086
+    length: 71
     placeholder_text: |-
       /* TODO */
       set calc to the correct function calling the method above.
@@ -221,10 +221,10 @@ files:
       offset: 896
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '  DoMath calc = '
-  - offset: 981
-    length: 68
+  - offset: 1173
+    length: 138
     placeholder_text: |-
       /* TODO */
       return the result of calc.compute with the numbers given.
@@ -232,8 +232,8 @@ files:
       length: 68
       offset: 981
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |2-
 
               return calc
@@ -267,5 +267,9 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Are you sure you are putting the elements of the triplets correctly? or
+    that you are implementing the correct function for forEach?
+  time: Tue, 27 Jul 2021 23:20:31 UTC
 record: -1

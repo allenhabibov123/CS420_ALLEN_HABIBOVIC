@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-11T20:46:04" hostname="DESKTOP-FIVCS14" time="3.019">
+  <properties/>
+  <testcase name="testExecutors" classname="Tests" time="3.019"/>
+  <system-out><![CDATA[Charging
+Charging
+Charging
+Charging
+Charging
+Charging
+Charging
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

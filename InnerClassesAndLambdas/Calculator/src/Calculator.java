@@ -11,7 +11,7 @@ public class Calculator {
             case "*": res = (a, b) -> a * b;/* TODO */
 //Use a lambda expression to set "res" to the correct function.->x1*x2;
                 break;
-            case "/": res = (a, b) -> a / b;
+            case "/": res = (a, b) -> b == 0? Double.POSITIVE_INFINITY : a/b;
                 /* TODO */
 //Use a lambda expression to set "res" to the correct function. You must account for divisions by zero as specified in the instructions.INITY:x1/x2;
                 break;
